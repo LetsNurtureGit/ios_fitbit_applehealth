@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FitBitPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="88H-KS-T69">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfv-Rg-FqQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJW-Wv-37o">
+                                                <rect key="frame" x="133" y="281.5" width="109" height="30"/>
+                                                <state key="normal" title="Sync Wiht FitBit"/>
+                                                <connections>
+                                                    <action selector="btnLoginWithFitBitCLK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vsm-0p-5P6"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Va7-Ht-PBh">
+                                                <rect key="frame" x="144.5" y="141.5" width="86.5" height="41"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAF-FZ-cui">
+                                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sync Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLt-is-Srp">
+                                                        <rect key="frame" x="0.0" y="20.5" width="86.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghX-Xl-hLj">
+                                                <rect key="frame" x="312" y="12" width="51" height="30"/>
+                                                <state key="normal" title="LogOut"/>
+                                                <connections>
+                                                    <action selector="btnLogOutCLK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUG-ZM-T6W"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="BJW-Wv-37o" firstAttribute="centerX" secondItem="Hfv-Rg-FqQ" secondAttribute="centerX" id="D19-3O-Vq4"/>
+                                            <constraint firstAttribute="bottom" secondItem="BJW-Wv-37o" secondAttribute="bottom" constant="12" id="MiN-to-xdO"/>
+                                            <constraint firstItem="Va7-Ht-PBh" firstAttribute="centerX" secondItem="Hfv-Rg-FqQ" secondAttribute="centerX" id="Ngd-qW-guA"/>
+                                            <constraint firstAttribute="trailing" secondItem="ghX-Xl-hLj" secondAttribute="trailing" constant="12" id="X4W-Rw-Mv9"/>
+                                            <constraint firstItem="Va7-Ht-PBh" firstAttribute="centerY" secondItem="Hfv-Rg-FqQ" secondAttribute="centerY" id="b7G-C5-Tvt"/>
+                                            <constraint firstItem="ghX-Xl-hLj" firstAttribute="top" secondItem="Hfv-Rg-FqQ" secondAttribute="top" constant="12" id="csD-xO-fLL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFq-pA-yoe">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VbP-sV-sxQ">
+                                                <rect key="frame" x="144.5" y="141.5" width="86.5" height="41"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96U-l6-t73">
+                                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sync Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6T-mU-RbK">
+                                                        <rect key="frame" x="0.0" y="20.5" width="86.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-4e-RYz">
+                                                <rect key="frame" x="106.5" y="281.5" width="162" height="30"/>
+                                                <state key="normal" title="Sync Wiht Apple Health"/>
+                                                <connections>
+                                                    <action selector="btnSyncApplHelthkitCLK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1m-uD-8ca"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="VbP-sV-sxQ" firstAttribute="centerX" secondItem="OFq-pA-yoe" secondAttribute="centerX" id="3gy-vf-Zuu"/>
+                                            <constraint firstAttribute="bottom" secondItem="eRg-4e-RYz" secondAttribute="bottom" constant="12" id="Afz-UR-eDx"/>
+                                            <constraint firstItem="VbP-sV-sxQ" firstAttribute="centerY" secondItem="OFq-pA-yoe" secondAttribute="centerY" id="fTD-2P-r9V"/>
+                                            <constraint firstItem="eRg-4e-RYz" firstAttribute="centerX" secondItem="OFq-pA-yoe" secondAttribute="centerX" id="gQd-yb-aZB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="88H-KS-T69" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JOc-7V-nyq"/>
+                            <constraint firstItem="88H-KS-T69" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W9y-6a-p01"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="88H-KS-T69" secondAttribute="bottom" id="eLn-fG-ERu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="88H-KS-T69" secondAttribute="trailing" id="pzE-f8-fJc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogOut" destination="ghX-Xl-hLj" id="oHJ-md-L3s"/>
+                        <outlet property="lblAStepCount" destination="96U-l6-t73" id="WxZ-5J-KmT"/>
+                        <outlet property="lblASyncDate" destination="X6T-mU-RbK" id="e7i-lG-cBG"/>
+                        <outlet property="lblStepCount" destination="wAF-FZ-cui" id="tfH-y0-6cZ"/>
+                        <outlet property="lblSyncDate" destination="LLt-is-Srp" id="VAs-hI-i3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="27.436281859070466"/>
+        </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="aU3-1c-o7s">
+            <objects>
+                <viewController storyboardIdentifier="WebViewVC" id="Z7r-sE-PxW" customClass="WebViewVC" customModule="FitBitPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hG9-IH-s3W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vn-iL-lmU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6vn-iL-lmU" firstAttribute="top" secondItem="KIT-rM-vqs" secondAttribute="top" id="Kjc-gf-qhG"/>
+                            <constraint firstItem="KIT-rM-vqs" firstAttribute="trailing" secondItem="6vn-iL-lmU" secondAttribute="trailing" id="Vod-Gx-DXR"/>
+                            <constraint firstItem="6vn-iL-lmU" firstAttribute="leading" secondItem="KIT-rM-vqs" secondAttribute="leading" id="XiO-gz-Fq2"/>
+                            <constraint firstItem="KIT-rM-vqs" firstAttribute="bottom" secondItem="6vn-iL-lmU" secondAttribute="bottom" id="i7e-YZ-brn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KIT-rM-vqs"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="6vn-iL-lmU" id="Lbj-IZ-MdQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0KI-VW-UN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="32"/>
+        </scene>
+    </scenes>
+</document>

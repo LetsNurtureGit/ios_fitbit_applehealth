@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC6E1F9F21F19FD10036C68C /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E1F9A21F19FD10036C68C /* AppConstant.swift */; };
+		CC6E1FA021F19FD10036C68C /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E1F9B21F19FD10036C68C /* AuthenticationController.swift */; };
+		CC6E1FA121F19FD10036C68C /* FitbitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E1F9C21F19FD10036C68C /* FitbitAPI.swift */; };
+		CC6E1FA221F19FD10036C68C /* StepStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E1F9D21F19FD10036C68C /* StepStat.swift */; };
+		CC6E1FA321F19FD10036C68C /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E1F9E21F19FD10036C68C /* WebViewVC.swift */; };
+		CC6E1FA521F1A0B40036C68C /* HealthKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E1FA421F1A0B30036C68C /* HealthKitController.swift */; };
+		CC6E1FAB21F1A2E00036C68C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6E1FAA21F1A2E00036C68C /* HealthKit.framework */; };
+		CC79C73421F043B1008F8184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79C73321F043B1008F8184 /* AppDelegate.swift */; };
+		CC79C73621F043B1008F8184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79C73521F043B1008F8184 /* ViewController.swift */; };
+		CC79C73921F043B1008F8184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC79C73721F043B1008F8184 /* Main.storyboard */; };
+		CC79C73C21F043B1008F8184 /* FitBitPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC79C73A21F043B1008F8184 /* FitBitPOC.xcdatamodeld */; };
+		CC79C73E21F043B2008F8184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC79C73D21F043B2008F8184 /* Assets.xcassets */; };
+		CC79C74121F043B2008F8184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC79C73F21F043B2008F8184 /* LaunchScreen.storyboard */; };
+		CC79C74C21F043B2008F8184 /* FitBitPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79C74B21F043B2008F8184 /* FitBitPOCTests.swift */; };
+		CC79C75721F043B2008F8184 /* FitBitPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79C75621F043B2008F8184 /* FitBitPOCUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC79C74821F043B2008F8184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC79C72821F043B1008F8184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC79C72F21F043B1008F8184;
+			remoteInfo = FitBitPOC;
+		};
+		CC79C75321F043B2008F8184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC79C72821F043B1008F8184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC79C72F21F043B1008F8184;
+			remoteInfo = FitBitPOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC6E1F9A21F19FD10036C68C /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		CC6E1F9B21F19FD10036C68C /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		CC6E1F9C21F19FD10036C68C /* FitbitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitbitAPI.swift; sourceTree = "<group>"; };
+		CC6E1F9D21F19FD10036C68C /* StepStat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepStat.swift; sourceTree = "<group>"; };
+		CC6E1F9E21F19FD10036C68C /* WebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		CC6E1FA421F1A0B30036C68C /* HealthKitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitController.swift; sourceTree = "<group>"; };
+		CC6E1FA921F1A2CE0036C68C /* FitBitPOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitBitPOC.entitlements; sourceTree = "<group>"; };
+		CC6E1FAA21F1A2E00036C68C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		CC79C73021F043B1008F8184 /* FitBitPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC79C73321F043B1008F8184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC79C73521F043B1008F8184 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC79C73821F043B1008F8184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC79C73B21F043B1008F8184 /* FitBitPOC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitBitPOC.xcdatamodel; sourceTree = "<group>"; };
+		CC79C73D21F043B2008F8184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC79C74021F043B2008F8184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC79C74221F043B2008F8184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC79C74721F043B2008F8184 /* FitBitPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBitPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC79C74B21F043B2008F8184 /* FitBitPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBitPOCTests.swift; sourceTree = "<group>"; };
+		CC79C74D21F043B2008F8184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC79C75221F043B2008F8184 /* FitBitPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBitPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC79C75621F043B2008F8184 /* FitBitPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBitPOCUITests.swift; sourceTree = "<group>"; };
+		CC79C75821F043B2008F8184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC79C72D21F043B1008F8184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6E1FAB21F1A2E00036C68C /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC79C74421F043B2008F8184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC79C74F21F043B2008F8184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC6E1F9921F19FD10036C68C /* FitBitClass */ = {
+			isa = PBXGroup;
+			children = (
+				CC6E1F9A21F19FD10036C68C /* AppConstant.swift */,
+				CC6E1F9B21F19FD10036C68C /* AuthenticationController.swift */,
+				CC6E1F9C21F19FD10036C68C /* FitbitAPI.swift */,
+				CC6E1F9D21F19FD10036C68C /* StepStat.swift */,
+				CC6E1F9E21F19FD10036C68C /* WebViewVC.swift */,
+			);
+			path = FitBitClass;
+			sourceTree = "<group>";
+		};
+		CC6E1FA621F1A2CE0036C68C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC6E1FAA21F1A2E00036C68C /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC79C72721F043B1008F8184 = {
+			isa = PBXGroup;
+			children = (
+				CC79C73221F043B1008F8184 /* FitBitPOC */,
+				CC79C74A21F043B2008F8184 /* FitBitPOCTests */,
+				CC79C75521F043B2008F8184 /* FitBitPOCUITests */,
+				CC79C73121F043B1008F8184 /* Products */,
+				CC6E1FA621F1A2CE0036C68C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC79C73121F043B1008F8184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC79C73021F043B1008F8184 /* FitBitPOC.app */,
+				CC79C74721F043B2008F8184 /* FitBitPOCTests.xctest */,
+				CC79C75221F043B2008F8184 /* FitBitPOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC79C73221F043B1008F8184 /* FitBitPOC */ = {
+			isa = PBXGroup;
+			children = (
+				CC6E1FA921F1A2CE0036C68C /* FitBitPOC.entitlements */,
+				CC6E1F9921F19FD10036C68C /* FitBitClass */,
+				CC79C73321F043B1008F8184 /* AppDelegate.swift */,
+				CC79C73521F043B1008F8184 /* ViewController.swift */,
+				CC6E1FA421F1A0B30036C68C /* HealthKitController.swift */,
+				CC79C73721F043B1008F8184 /* Main.storyboard */,
+				CC79C73D21F043B2008F8184 /* Assets.xcassets */,
+				CC79C73F21F043B2008F8184 /* LaunchScreen.storyboard */,
+				CC79C74221F043B2008F8184 /* Info.plist */,
+				CC79C73A21F043B1008F8184 /* FitBitPOC.xcdatamodeld */,
+			);
+			path = FitBitPOC;
+			sourceTree = "<group>";
+		};
+		CC79C74A21F043B2008F8184 /* FitBitPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC79C74B21F043B2008F8184 /* FitBitPOCTests.swift */,
+				CC79C74D21F043B2008F8184 /* Info.plist */,
+			);
+			path = FitBitPOCTests;
+			sourceTree = "<group>";
+		};
+		CC79C75521F043B2008F8184 /* FitBitPOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC79C75621F043B2008F8184 /* FitBitPOCUITests.swift */,
+				CC79C75821F043B2008F8184 /* Info.plist */,
+			);
+			path = FitBitPOCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC79C72F21F043B1008F8184 /* FitBitPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC79C75B21F043B2008F8184 /* Build configuration list for PBXNativeTarget "FitBitPOC" */;
+			buildPhases = (
+				CC79C72C21F043B1008F8184 /* Sources */,
+				CC79C72D21F043B1008F8184 /* Frameworks */,
+				CC79C72E21F043B1008F8184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitBitPOC;
+			productName = FitBitPOC;
+			productReference = CC79C73021F043B1008F8184 /* FitBitPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC79C74621F043B2008F8184 /* FitBitPOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC79C75E21F043B2008F8184 /* Build configuration list for PBXNativeTarget "FitBitPOCTests" */;
+			buildPhases = (
+				CC79C74321F043B2008F8184 /* Sources */,
+				CC79C74421F043B2008F8184 /* Frameworks */,
+				CC79C74521F043B2008F8184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC79C74921F043B2008F8184 /* PBXTargetDependency */,
+			);
+			name = FitBitPOCTests;
+			productName = FitBitPOCTests;
+			productReference = CC79C74721F043B2008F8184 /* FitBitPOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC79C75121F043B2008F8184 /* FitBitPOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC79C76121F043B2008F8184 /* Build configuration list for PBXNativeTarget "FitBitPOCUITests" */;
+			buildPhases = (
+				CC79C74E21F043B2008F8184 /* Sources */,
+				CC79C74F21F043B2008F8184 /* Frameworks */,
+				CC79C75021F043B2008F8184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC79C75421F043B2008F8184 /* PBXTargetDependency */,
+			);
+			name = FitBitPOCUITests;
+			productName = FitBitPOCUITests;
+			productReference = CC79C75221F043B2008F8184 /* FitBitPOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC79C72821F043B1008F8184 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = letsnurture;
+				TargetAttributes = {
+					CC79C72F21F043B1008F8184 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+						};
+					};
+					CC79C74621F043B2008F8184 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CC79C72F21F043B1008F8184;
+					};
+					CC79C75121F043B2008F8184 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CC79C72F21F043B1008F8184;
+					};
+				};
+			};
+			buildConfigurationList = CC79C72B21F043B1008F8184 /* Build configuration list for PBXProject "FitBitPOC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC79C72721F043B1008F8184;
+			productRefGroup = CC79C73121F043B1008F8184 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC79C72F21F043B1008F8184 /* FitBitPOC */,
+				CC79C74621F043B2008F8184 /* FitBitPOCTests */,
+				CC79C75121F043B2008F8184 /* FitBitPOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC79C72E21F043B1008F8184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC79C74121F043B2008F8184 /* LaunchScreen.storyboard in Resources */,
+				CC79C73E21F043B2008F8184 /* Assets.xcassets in Resources */,
+				CC79C73921F043B1008F8184 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC79C74521F043B2008F8184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC79C75021F043B2008F8184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC79C72C21F043B1008F8184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC79C73621F043B1008F8184 /* ViewController.swift in Sources */,
+				CC6E1FA221F19FD10036C68C /* StepStat.swift in Sources */,
+				CC6E1FA521F1A0B40036C68C /* HealthKitController.swift in Sources */,
+				CC79C73421F043B1008F8184 /* AppDelegate.swift in Sources */,
+				CC79C73C21F043B1008F8184 /* FitBitPOC.xcdatamodeld in Sources */,
+				CC6E1FA321F19FD10036C68C /* WebViewVC.swift in Sources */,
+				CC6E1FA021F19FD10036C68C /* AuthenticationController.swift in Sources */,
+				CC6E1FA121F19FD10036C68C /* FitbitAPI.swift in Sources */,
+				CC6E1F9F21F19FD10036C68C /* AppConstant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC79C74321F043B2008F8184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC79C74C21F043B2008F8184 /* FitBitPOCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC79C74E21F043B2008F8184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC79C75721F043B2008F8184 /* FitBitPOCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC79C74921F043B2008F8184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC79C72F21F043B1008F8184 /* FitBitPOC */;
+			targetProxy = CC79C74821F043B2008F8184 /* PBXContainerItemProxy */;
+		};
+		CC79C75421F043B2008F8184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC79C72F21F043B1008F8184 /* FitBitPOC */;
+			targetProxy = CC79C75321F043B2008F8184 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC79C73721F043B1008F8184 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC79C73821F043B1008F8184 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC79C73F21F043B2008F8184 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC79C74021F043B2008F8184 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC79C75921F043B2008F8184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC79C75A21F043B2008F8184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC79C75C21F043B2008F8184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FitBitPOC/FitBitPOC.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GSUVL7BSJP;
+				INFOPLIST_FILE = FitBitPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FitBitPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Medchek_Dev;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC79C75D21F043B2008F8184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FitBitPOC/FitBitPOC.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GSUVL7BSJP;
+				INFOPLIST_FILE = FitBitPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.FitBitPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Medchek_Dev;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC79C75F21F043B2008F8184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FitBitPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsnurture.FitBitPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBitPOC.app/FitBitPOC";
+			};
+			name = Debug;
+		};
+		CC79C76021F043B2008F8184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FitBitPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsnurture.FitBitPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBitPOC.app/FitBitPOC";
+			};
+			name = Release;
+		};
+		CC79C76221F043B2008F8184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FitBitPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsnurture.FitBitPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitBitPOC;
+			};
+			name = Debug;
+		};
+		CC79C76321F043B2008F8184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FitBitPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsnurture.FitBitPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitBitPOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC79C72B21F043B1008F8184 /* Build configuration list for PBXProject "FitBitPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC79C75921F043B2008F8184 /* Debug */,
+				CC79C75A21F043B2008F8184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC79C75B21F043B2008F8184 /* Build configuration list for PBXNativeTarget "FitBitPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC79C75C21F043B2008F8184 /* Debug */,
+				CC79C75D21F043B2008F8184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC79C75E21F043B2008F8184 /* Build configuration list for PBXNativeTarget "FitBitPOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC79C75F21F043B2008F8184 /* Debug */,
+				CC79C76021F043B2008F8184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC79C76121F043B2008F8184 /* Build configuration list for PBXNativeTarget "FitBitPOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC79C76221F043B2008F8184 /* Debug */,
+				CC79C76321F043B2008F8184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC79C73A21F043B1008F8184 /* FitBitPOC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC79C73B21F043B1008F8184 /* FitBitPOC.xcdatamodel */,
+			);
+			currentVersion = CC79C73B21F043B1008F8184 /* FitBitPOC.xcdatamodel */;
+			path = FitBitPOC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CC79C72821F043B1008F8184 /* Project object */;
+}
