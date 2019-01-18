@@ -18,10 +18,11 @@ Hey guys! Here's a project I was working on for iOS that connects with the Fitbi
 This app deals with the boilerplate code of using the Fitbit API with iOS Swift, authenticating via OAuth and making a simple API call. It is meant as a starting point for more robust applications and a demonstration of some of the basic concepts of the API. Swift 4.2 with Xcode 10.1 is preferred, though 
 
 [Install Xcode 10.1](https://developer.apple.com/download/more/)
+
 [Read More About the Fitbit API](https://dev.fitbit.com/docs/)
 
 ##Prerequisites
-This document assumes you have Xcode 8 and Swift 3 installed. A tutorial for installing these is out of scope for this project, but there are many resources to instruct you on how to do so.
+This document assumes you have Xcode 10.1 and Swift 4.2 installed. A tutorial for installing these is out of scope for this project, but there are many resources to instruct you on how to do so.
 
 ## Developing Your Own App
 
