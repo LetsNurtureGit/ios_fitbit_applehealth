@@ -15,9 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet var lblSyncDate: UILabel!
     
     @IBOutlet var lblAStepCount: UILabel!
-    @IBOutlet var lblASyncDate: UILabel!
+    @IBOutlet var lblAHeartRate: UILabel!
     
     @IBOutlet var btnLogOut: UIButton!
+    
+    @IBOutlet var txtHeartRate: UITextField!
+    
     
     //ForFttBit Data Fetch
     var authenticationController: AuthenticationController?
@@ -61,6 +64,13 @@ class ViewController: UIViewController {
     @IBAction func btnSyncApplHelthkitCLK(_ sender: UIButton) {
         askForHealthKitAccess()
     }
+    
+    @IBAction func btnSubmitHeartRateCLK(_ sender: UIButton) {
+        if !txtHeartRate.text!.isEmpty {
+            self.writeHeartRateIntoHealthStore(heartRate: NSString(string: txtHeartRate.text!).doubleValue)
+        }
+    }
+    
 }
 
 extension ViewController : AuthenticationProtocol {
@@ -135,6 +145,7 @@ extension ViewController {
                 print("HealthKit Authentication Failed")
             } else {
                 self.getStepCountAppleHelthKit()
+                self.getHeartRateFromAppleHelthKit()
             }
         }
     }
@@ -156,10 +167,35 @@ extension ViewController {
                 }
                 if !samples.isEmpty {
                     if let obj = samples.last {
-                        self.lblAStepCount.text = "\(steps)"
-                        self.lblASyncDate.text = "\(obj.endDate)"
+                        self.lblAStepCount.text = "Steps Count: \(steps) \nDate: \(obj.endDate)"
                     }
                 }
+            }
+        }
+    }
+    
+    func getHeartRateFromAppleHelthKit() {
+        guard let heartRate = HKSampleType.quantityType(forIdentifier: .heartRate) else {
+            print("Something horrible has happened.")
+            return
+        }
+        
+        HealthKitController.sharedInstance.readMostRecentSample(for: heartRate) { (samples, error) in
+            if let samples = samples {
+                
+                
+                DispatchQueue.main.async {
+                    
+                    /// Converting the heart rate to bpm
+                    let heartRateUnit = HKUnit(from: "count/min")
+                    let heartRate = samples.first!.quantity.doubleValue(for: heartRateUnit)
+                    
+                    /// Updating the UI with the retrieved value
+                    self.lblAHeartRate.text = "HeartRate: \(Int(heartRate)) \nDate: \(samples.first!.endDate)"
+                }
+            }
+            else {
+                print(error)
             }
         }
     }
@@ -178,6 +214,21 @@ extension ViewController {
                 completionBLK?(arr)
             }
             completionBLK?(nil)
+        }
+    }
+    
+    func writeHeartRateIntoHealthStore(heartRate : Double) {
+        let unit = HKUnit.count().unitDivided(by: HKUnit.minute())
+        let quantity = HKQuantity(unit: unit, doubleValue: heartRate)
+        HealthKitController.sharedInstance.writeSample(for: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!, sampleQuantity:quantity) { (success, error) in
+            if success {
+                print("Write Successfully")
+                self.view.endEditing(true)
+                self.getHeartRateFromAppleHelthKit()
+            }
+            else {
+                print(error)
+            }
         }
     }
 }

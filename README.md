@@ -38,7 +38,7 @@ Once you have setup your app you need to put the client ID and client secret int
 
 
 # Apple-Health-Swift
-There's a sunc button that will request Authorization for permition and allow you to access HealthKit data and then step count will be populated with current date.
+There's a sync button that will request Authorization for permition and allow you to access HealthKit data and then step count will be populated with current date.
 
 HealthKit is not supported on all iOS devices.  Using HKHealthStore APIs on devices which are not
 supported will result in errors with the HKErrorHealthDataUnavailable code.  Call isHealthDataAvailable
